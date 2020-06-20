@@ -45,7 +45,7 @@ newQuestion = () => {
             console.log("current score ");
             console.log(score);
             selectedChoice = e.target.innerText;
-            console.log("you clicked " + selectedChoice); // validate
+            console.log("you clicked " + selectedChoice);
             console.log("your choice was correct?");
             console.log(selectedChoice == correct);
             console.log("type of " + typeof (selectedChoice));
@@ -63,7 +63,7 @@ newQuestion = () => {
             console.log(wrong);
             selectedChoice = e.target.innerText;
             console.log("you clicked " + selectedChoice);
-            console.log("your choice was correct?");
+            console.log("was your choice correct?");
             console.log(selectedChoice == correct);
             console.log("type of " + typeof (selectedChoice));
             if (e.target = falseBtn) {
