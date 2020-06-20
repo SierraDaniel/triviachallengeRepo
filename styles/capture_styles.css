@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* ((((((((((((((  CAPTURE STYLES  )))))))))))))))*/
+* {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Chakra Petch';
+}
+
+#top_bar {
+    max-width: 1438px;
+    height: 23px;
+    background: linear-gradient(90deg, rgba(65, 128, 246, 1) 0%, rgba(247, 201, 243, 1) 100%);
+}
+
+#top_bar p {
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-top: 4px;
+    margin-left: 7px;
+}
+
+
+.back_arrow {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 19px;
+    margin-left: 60px;
+}
+
+.logo {
+    width: 102.6px;
+    height: 64px;
+    margin-left: 7px;
+    margin-top: 35px;
+}
+
+.instruction_box {
+    width: 684px;
+    height: 386px;
+    margin-left: 378px;
+    margin-top: 75px;
+    display: flex;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.bar_gradient {
+    width: 678px;
+    height: 24px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 4px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.bar_gradient_label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 3.4px;
+    margin-left: 4px;
+}
+
+.window_icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 57px;
+    margin-left: 25px;
+
+}
+
+.instruction_title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: absolute;
+    margin-top: 57px;
+    margin-left: 16px;
+}
+
+.instructions_text {
+    width: 518px;
+    height: 190px;
+    font-weight: normal;
+    position: absolute;
+    margin-top: 96px;
+    margin-left: 73px;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+pre {
+    font-family: 'Chakra Petch';
+    white-space: pre;
+    margin: 1em 0px;
+    line-height: 28px;
+}
+
+.cancel_button,
+.start_button {
+    width: 144px;
+    height: 36px;
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 314px;
+    cursor: pointer;
+}
+
+.start_button p {
+    padding: 8px 30px 8px 30px;
+
+}
+
+.start_button :hover {
+
+    background: #E6BBE2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.cancel_button {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    position: relative;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    line-height: 34px;
+    margin-left: 287px;
+}
+
+.start_button {
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    position: relative;
+    margin-left: 16px;
+}
+

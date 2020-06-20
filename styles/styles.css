@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Mobile first */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(28,129,255);
+    background: linear-gradient(37deg, rgba(28,129,255,1) 17%, rgba(101,234,247,1) 96%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 720px;
+    width: 100%;
+    /* padding: 5% 10%; */
+    color: #ffffff;
+
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 6 rem;
+    margin-bottom: 5rem;
+}
+
+
+h1 {
+    font-family: 'MuseoModerno';
+    text-align: center;
+    font-weight: 500;
+}
+
+.container {
+
+    width: 100%;
+    height: 80vw;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* max-width: 80rem; */
+}
+
+/* a cualquier hijo de container */
+.container > * {
+width: 100%;
+}
+
+.flex.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+        font-size: 1.8rem;
+        padding: 1rem;
+        width: 25rem;
+        height: 50px;
+        font-family: 'MuseoModerno';
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        margin-bottom: 1rem;
+        color: white;
+        background-color: rgb(112, 231, 43);
+        
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(1, 56, 53, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 200ms;
+}
+/* Responsive column widths */
+/* @media (min-width: 700px) {} */

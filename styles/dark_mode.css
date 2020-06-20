@@ -1,0 +1,626 @@
+@charset "UTF-8";
+/* ||||||   DARK MODE |||||||||||||| */
+
+* {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Chakra Petch';
+    background: #110038;
+}
+
+#top_bar {
+    max-width: 1438px;
+    height: 23px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+#top_bar p {
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-top: 4px;
+    margin-left: 7px;
+}
+
+.logo_and_buttons {
+    width: 1223px;
+    height: 64px;
+    margin-left: 90px;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 102.6px;
+    height: 64px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.standard_button {
+    width: 144px;
+    height: 36px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.p_button {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 35px;
+}
+
+#button_create {
+    margin-right: 12px;
+    margin-left: 657px;
+    line-height: 63px;
+}
+
+#button_choose {
+    line-height: 63px;
+    margin-left: -9px;
+    width: 131px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -1px;
+    margin-left: -14px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 170px;
+    height: 102px;
+    display: none;
+    position: absolute;
+    margin-left: -133px;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+#dropIcon {
+    width: 10px;
+    height: 6px;
+
+}
+
+.standard_button :hover {
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+#sailor_day,
+#sailor_night {
+    width: 148px;
+    height: 34px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+#sailor_day {
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#sailor_night {
+    background: #2E32FB;
+    border: 1px solid rgba(51, 53, 143, 0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#sailor_day p {
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+#sailor_night p {
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+#sailor_day p,
+#sailor_night p {
+    margin-left: 16px;
+}
+
+#button_my_gifos {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 95px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#button_my_gifos:hover {
+    border: 1px dotted;
+}
+
+#button_my_gifos :active {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+#button_my_gifos ::after {
+    content: '';
+    width: 12%;
+    display: block;
+    position: relative;
+    border: 1px solid #FFFFFF;
+}
+
+/* ////////// BARRA DE BUSQUEDA ///////////*/
+
+.search_bar {
+    width: 1200px;
+    height: 99px;
+    margin-left: 93px;
+    justify-content: center;
+    margin-top: 1.1rem;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.input_button_block {
+    display: flex;
+    align-items: center;
+}
+
+#search_input {
+    height: 48px;
+    width: 1042px;
+    position: relative;
+    font-family: 'Chakra Petch';
+    font-size: 18px;
+    margin-top: 14px;
+    margin-left: 15px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+::placeholder {
+    margin-left: 15px;
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #B4B4B4;
+    line-height: 22px;
+    opacity: 1;
+}
+
+
+.search_button {
+    width: 102px;
+    height: 36px;
+    margin-left: 6px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.search_button:hover {
+
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+.search_button:hover p,
+.search_button_input p {
+    color: #110038;
+}
+
+.search_button_input {
+    width: 102px;
+    height: 36px;
+    margin-left: 6px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.search_button p {
+
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #8F8F8F;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.search_icon {
+
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.color_bar {
+    width: 1194px;
+    height: 24px;
+    margin-left: 2px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    justify-content: center;
+}
+
+.color_bar p {
+    color: white;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 5px;
+    font-family: 'Chakra Petch', bold;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+/* ***** dropdown sugerencias ******    */
+
+/* Dropdown Button */
+.search_container {
+    display: block;
+    cursor: pointer;
+    width: 1200px;
+    height: 160px;
+    margin-top: 0px;
+    margin-left: 93px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    z-index: 5;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.search_hidden {
+
+    display: none;
+}
+
+/* Links inside the dropdown */
+.search_suggestion div {
+    width: 1057px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-top: 6px;
+    color: black;
+    text-decoration: none;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Change color of dropdown links on hover */
+
+.search_suggestion div:hover {
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show_suggestion {
+    display: flex;
+}
+
+/* ****FIN DROPDOWN SUGERENCIAS***** */
+
+.today_suggestion_bar {
+    width: 1200px;
+    height: 32px;
+    margin-left: 93px;
+    margin-top: 63px;
+    margin-bottom: 18px;
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+.today_suggestion_bar {
+    width: 1200px;
+    height: 32px;
+    margin-left: 93px;
+    margin-top: 63px;
+    margin-bottom: 18px;
+    padding-left: 7px;
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.today_suggestion_bar p {
+    margin-top: 6px;
+    font-family: 'Chakra Petch';
+    font-size: 14px;
+    height: 18px;
+    color: #110038;
+}
+
+
+.color_bar_grid {
+    width: 288px;
+    height: 24px;
+    margin-top: -24px;
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color_bar_grid p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: 3px;
+    position: relative;
+}
+
+.close_icon {
+    width: 16px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+.grid-container :after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 288px 288px 288px 288px;
+    grid-template-rows: 288px;
+    grid-template-areas: "image1 image2 image3 image4";
+    margin-left: 97px;
+    grid-gap: 15px;
+    position: relative;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    margin-top: 22px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    display: block;
+}
+
+/* span para los hover con titulo */
+
+.grid_container2 img:hover span {
+
+    display: block;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+.grid_container2 div {
+
+    display: block;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.grid_container2 div span {
+
+    font-family: 'Chakra Petch';
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    position: absolute;
+    margin-top: 269px;
+    margin-left: 7px;
+    z-index: 8;
+    display: none;
+}
+
+.grid_container2 div:hover span {
+    display: block;
+}
+
+.grid_container2 div::after {
+    content: "";
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    height: 24px;
+    width: 290px;
+    top: 266px;
+    position: relative;
+    z-index: 5;
+    display: none;
+}
+
+.grid_container2 div:hover::after {
+    display: block;
+}
+
+
+.inner_gif {
+    height: 259px;
+    width: 280px;
+    position: relative;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.ver_mas {
+    width: 81px;
+    height: 34px;
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    margin-top: -72px;
+    margin-left: 11px;
+    z-index: 2;
+}
+
+.ver_mas p {
+
+    font-family: 'Chakra Petch';
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 0px;
+    margin-top: 8px;
+}
+.ver_mas:hover {
+    background: #2629CC;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.grid_container2 {
+    display: grid;
+    grid-template-columns: 288px 288px 288px 288px;
+    grid-template-rows: 288px;
+    grid-template-areas: "image1 image2 image3 image4";
+    margin-left: 90px;
+    grid-gap: 15px;
+    position: relative;
+}
+
+.visible_grid {
+    display: grid;
+    grid-template-columns: 288px 288px 288px 288px;
+    grid-template-rows: 288px;
+    grid-template-areas: "image1 image2 image3 image4";
+    margin-left: 90px;
+    grid-gap: 15px;
+    position: relative;
+}
+
+.results_hidden {
+    display: none;
+}
+
+.trends_grid {
+    width: 288px;
+    height: 298px;
+}

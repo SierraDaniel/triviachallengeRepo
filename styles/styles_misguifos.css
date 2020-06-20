@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Chakra Petch';
+}
+
+#top_bar {
+    max-width: 1438px;
+    height: 23px;
+    background: linear-gradient(90deg, rgba(65, 128, 246, 1) 0%, rgba(247, 201, 243, 1) 100%);
+}
+
+#top_bar p {
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding-top: 4px;
+    margin-left: 7px;
+}
+
+.logo_and_buttons {
+    width: 1236px;
+    height: 64px;
+    margin-left: 90px;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 102.6px;
+    height: 64px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.standard_button {
+    width: 144px;
+    height: 36px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.p_button {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 35px;
+}
+#button_create {
+    margin-right: 12px;
+    margin-left: 657px;
+    line-height: 63px;
+}
+
+#button_choose {
+    line-height: 63px;
+    margin-left: -9px;
+    width: 131px;
+    position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background: #E6BBE2;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+/* contenedor <div> -para posicionar el contenido del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -1px;
+    margin-left: -23px;
+}
+
+/* Dropdown Content (inicia oculto) */
+.dropdown-content {
+    width: 170px;
+    height: 102px;
+    display: none;
+    position: absolute;
+    margin-left: -133px;
+    background-color: #f1f1f1;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    z-index: 1;
+}
+
+/* enlaces de dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* cambia color de enlaces de dropdown cuando se hace hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* muestra el menu de dropdown ( desde Js se agrega esta clase cuando el usuaario hace click en dropdown button) */
+.show {
+    display: block;
+}
+
+.dropdown_icon {
+    margin: 14px 11px;
+}
+
+.standard_button:hover {
+    background: #E6BBE2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted;
+    outline-offset: -4px;
+}
+
+#sailor_day,
+#sailor_night {
+    width: 148px;
+    height: 34px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#sailor_day p,
+#sailor_night p {
+    margin-left: 16px;
+}
+
+#sailor_day {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#button_my_gifos {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #110038;
+    background-color: rgba(0, 0, 0, 0);
+    width: 95px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#button_my_gifos :hover {
+    border: 1px dotted #110038;
+}
+
+#button_my_gifos :active {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+#button_my_gifos ::after {
+    content: '';
+    width: 12%;
+    display: block;
+    position: absolute;
+    border: 1px solid #110038;
+}
+
+/* ****FIN DROPDOWN SUGERENCIAS***** */
+
+.today_suggestion_bar {
+    width: 1200px;
+    height: 32px;
+    margin-left: 93px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding-left: 7px;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.today_suggestion_bar p {
+    margin-top: 6px;
+    font-family: 'Chakra Petch';
+    font-size: 14px;
+    height: 18px;
+    color: #110038;
+}
+
+#results_container {
+
+    margin-left: 93px;
+    margin-top: 16px;
+    width: 1212px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
